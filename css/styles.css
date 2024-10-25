@@ -1,0 +1,849 @@
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  color: white;
+}
+
+/* Navegación */
+.nav-list {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin-bottom: 100%;
+}
+
+.nav-item {
+  margin-bottom: 80%;
+  display: flex;
+  align-items: center;
+  margin: 0 60px;
+}
+
+.nav-link {
+  color: #ffffff;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 10px 15px;
+  transition: background-color 0.3s, color 0.3s;
+  border-radius: 5px;
+}
+
+.nav-link:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #0a0a0a;
+}
+
+/* Cursos */
+.course-item {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 20px;
+
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.course-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.course-image {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* Galería de Imágenes */
+
+/* Imagen y contenido del banner */
+.imagen-banner img {
+  width: 100%;
+  height: 800px;
+}
+
+.marketing-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #ffffff;
+  z-index: 1;
+}
+
+.marketing-phrase {
+  font-size: 24px;
+  margin: 10px 0;
+}
+
+.cta-button {
+  background-color: #9a0202;
+  color: white;
+  padding: 2%;
+  font-size: 20px;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  transition: background-color 0.3s;
+  border: #ddd;
+  margin-bottom: 5%;
+}
+
+.cta-button:hover {
+  background-color: black;
+}
+
+/* Logo */
+.logo-container img {
+  position: absolute;
+  left: 20px;
+  width: 45%;
+  height: 15%;
+}
+
+/* Header */
+.site-header {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+.header-title {
+  margin-left: 20px;
+  font-size: 1.5rem;
+}
+
+/* Historia y Filosofía */
+.history-section,
+.philosophy-section {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 2rem;
+  margin: 2rem 0;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.history-section h2,
+.philosophy-section h2 {
+  margin-bottom: 1rem;
+}
+
+.history-section p,
+.philosophy-section p {
+  margin: 0;
+  font-size: 1.1rem;
+  color: #fffcfc;
+}
+
+/* Contenedores de Historia y Filosofía */
+.history-philosophy-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+
+.history-column,
+.philosophy-column {
+  flex: 1;
+  margin: 10px;
+}
+
+.subsection-title {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.courses-gallery {
+  text-align: center;
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+.section-text {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+.gallery-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px; /* Espacio entre las tarjetas */
+}
+
+.gallery-item {
+  position: relative;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.gallery-item:hover {
+  transform: translateY(-5px);
+}
+
+.course-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px 8px 0 0;
+}
+
+.view-more-button {
+  position: absolute;
+  top: 20%;
+
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #9a0202;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 5px 10px;
+  z-index: 1;
+}
+
+.course-title {
+  font-size: 1.5em;
+  margin: 10px 0;
+}
+
+.course-description {
+  font-size: 1em;
+  color: #000000;
+  margin-bottom: 15px;
+}
+
+.view-more-button {
+  display: inline-block;
+  background-color: #9a0202; /* Cambia el color según tu diseño */
+  color: white;
+  padding: 10px 15px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.view-more-button:hover {
+  background-color: black; /* Color al pasar el ratón */
+}
+
+.course-title {
+  font-size: 1.5rem;
+  color: #333;
+  margin: 1rem 0;
+}
+
+.course-description {
+  font-size: 1rem;
+  color: #666;
+}
+/* Section Titles */
+
+.section-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: white;
+  letter-spacing: 1px;
+}
+
+.media-location-section {
+  padding: 20px;
+}
+
+.media-item:hover {
+  transform: scale(1.02);
+}
+
+.logo {
+  max-width: 100px;
+  height: auto;
+  margin: 0 auto;
+}
+
+.media-subtitle {
+  font-size: 1.2em;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.media-description {
+  font-size: 0.9em;
+  color: #ffffff;
+  flex-grow: 1;
+}
+
+.video-wrapper,
+.audio-wrapper,
+.location-map-container {
+  margin-bottom: 10px;
+  margin-right: 20%;
+}
+
+.media-video {
+  width: 100%;
+}
+
+.media-location-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: calc(
+    100vh - 200px
+  ); /* Ajustar la altura de la sección, restando el footer */
+  padding: 20px;
+}
+
+.media-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.media-item {
+  flex: 1 1 300px;
+  margin: 10px;
+  max-width: 500px;
+}
+
+.video-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Estilo para la sección de cursos */
+.courses-gallery {
+  text-align: center;
+  padding: 20px;
+  background-color: #f9f9f9; /* Fondo de la sección */
+}
+
+.section-title {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.section-text {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+.map-columns {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* Alineación vertical al inicio */
+  margin-top: 20px;
+  flex-wrap: wrap; /* Permite que las columnas se ajusten en pantallas más pequeñas */
+  margin-left: 5%;
+}
+
+.map-container {
+  margin-top: 10px; /* Espaciado superior para el mapa */
+}
+
+.footer-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 20px 0;
+}
+.footer-column ul {
+  flex: 1;
+  margin: 10px;
+  min-width: 200px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+  padding: 20px; /* Espaciado interno */
+  border-radius: 8px; /* Bordes redondeados */
+  text-align: center; /* Centrar el texto dentro de cada columna */
+  list-style-type: none;
+  margin-right: 10%;
+}
+.footer-bottom {
+  text-align: center; /* Centrar el texto en la parte inferior */
+  margin-top: 20px; /* Espaciado superior */
+}
+
+.history-philosophy-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+
+.history-philosophy-column {
+  flex: 1;
+  margin: 10px;
+}
+
+.subsection-image-uno,
+.subsection-image-dos {
+  width: 100%;
+  height: auto;
+}
+
+.course-title,
+.section-title {
+  color: #333;
+}
+
+/* Estilos del menú de navegación */
+.nav-menu {
+  background-color: #007bff;
+  padding: 10px;
+}
+
+.nav-list {
+  list-style: none;
+  padding: 0;
+}
+
+.nav-item {
+  display: inline;
+  margin-right: 20px;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+}
+
+/* Estilos del contenido del curso */
+.course-details {
+  margin-top: 20px;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.course-description {
+  margin-bottom: 15px;
+}
+
+.course-topics {
+  margin-bottom: 20px;
+}
+
+.topic-item {
+  margin: 5px 0;
+}
+
+/* Estilos de la tabla de precios */
+.course-pricing-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.course-pricing-table,
+th,
+td {
+  border: 1px solid #ddd;
+}
+
+.table-header,
+.table-data {
+  padding: 8px;
+  text-align: left;
+}
+
+.table-header {
+  color: black;
+}
+
+/* Estilos de estudiantes destacados */
+.featured-students {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.student {
+  text-align: center;
+}
+
+.student-image {
+  width: 100px;
+  height: auto;
+  border-radius: 50%;
+}
+
+.student-info {
+  margin-top: 10px;
+}
+
+.student-name {
+  font-weight: bold;
+}
+
+/* Estilos de opiniones de estudiantes */
+.student-reviews {
+  margin-top: 10px;
+  padding-left: 20px;
+}
+
+.review-item {
+  margin-bottom: 5px;
+}
+
+/* Estilos del pie de página */
+.site-footer {
+  text-align: center;
+  margin-top: 20px;
+  padding: 10px;
+
+  color: black;
+}
+
+.footer-text {
+  margin: 0;
+}
+
+.course-details {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.section-title {
+  color: #333;
+}
+
+/* Estilos para detalles del curso */
+.course-details {
+  max-width: 1200px; /* Ampliar el ancho máximo */
+  margin: 20px auto;
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.course-title {
+  text-align: center;
+  color: #9a0202; /* Título en bordo */
+}
+
+.course-description {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.section-title {
+  color: #9a0202; /* Títulos de sección en bordo */
+  text-align: center;
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.course-topics {
+  margin: 20px 0;
+  padding: 0;
+}
+
+.course-topics .topic-item {
+  margin: 10px 0;
+  color: #333;
+}
+
+.pricing-plans {
+  display: flex;
+  justify-content: space-between; /* Distribuir espacio entre planes */
+  margin: 20px 0;
+}
+
+.plan-card {
+  background-color: black; /* Fondo negro */
+  border: 2px solid #9a0202; /* Bordes en bordo */
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  flex: 1;
+  margin: 0 10px;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.2s;
+  color: white;
+}
+
+.plan-card:hover {
+  transform: scale(1.05);
+}
+
+.plan-title {
+  font-size: 1.8em;
+  margin-bottom: 10px;
+  color: #9a0202; /* Título de los planes en bordo */
+}
+
+.plan-price {
+  font-size: 1.5em;
+  color: white; /* Color para precios en blanco */
+  margin: 10px 0;
+}
+
+.plan-details {
+  margin: 5px 0;
+  color: white;
+}
+
+/* Estilos para las tarjetas de estudiantes */
+.featured-students {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 20px 0;
+}
+
+.student-card {
+  background-color: black;
+  border: 2px solid #9a0202;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  width: 30%;
+  margin: 10px;
+  text-align: center;
+  transition: transform 0.2s;
+  color: white;
+}
+
+.student-card:hover {
+  transform: scale(1.05);
+}
+
+.student-image {
+  width: 100%;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.student-info {
+  padding: 15px;
+}
+
+.student-name {
+  font-weight: bold;
+  margin: 10px 0;
+  color: #9a0202; /* Nombre del estudiante en bordo */
+}
+
+.student-testimonial {
+  font-style: italic;
+  color: #ccc;
+}
+
+/* Estilos para la tabla de módulos */
+.modules-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+.modules-table th,
+.modules-table td {
+  border: 1px solid #9a0202; /* Bordes de la tabla en bordo */
+  padding: 10px;
+  text-align: center;
+  color: black;
+}
+
+.modules-table th {
+  background-color: #9a0202; /* Fondo del encabezado de la tabla en bordo */
+  color: white;
+}
+
+.modules-table tr:nth-child(even) {
+  background-color: #f2f2f2; /* Fondo alternado en gris claro */
+}
+
+/* Estilos de contacto y pie de página */
+.map-columns h3 {
+  color: #9a0202; /* Títulos de sección de contacto en bordo */
+}
+
+footer.site-footer {
+  background-color: black;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+footer .footer-column h3 {
+  color: #9a0202; /* Títulos de pie de página en bordo */
+}
+
+.footer-bottom p {
+  margin: 10px 0 0;
+  color: white;
+}
+
+.contacto-main {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  background-image: url("/imagenes/contacto.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 20px;
+  overflow: hidden;
+}
+form {
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: rgba(255, 255, 255, 0.9);
+  max-width: 700px;
+  width: 90%; /* Ancho del formulario al 90% del contenedor padre */
+  margin: 0 auto; /* Centra horizontalmente el formulario */
+  box-sizing: border-box; /* Incluye padding y border en el ancho total */
+  max-height: 80vh; /* Limita la altura máxima del formulario */
+  overflow: auto;
+  color: #000000;
+}
+
+.label {
+  display: block;
+  margin-bottom: 5px;
+  color: #333; /* Color del texto de las etiquetas */
+}
+
+.input-text,
+.input-email,
+.input-tel,
+.textarea,
+.input-select {
+  width: 100%; /* Se mantiene el 100% para los inputs dentro del formulario */
+  padding: 8px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.input-radio,
+.input-checkbox {
+  margin-right: 10px;
+}
+
+.submit-button {
+  background-color: #9a0202; /* Color del botón */
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  text-align: center;
+}
+
+.submit-button:hover {
+  background-color: #7c0000; /* Color del botón al pasar el mouse */
+}
+
+.mensaje-exito {
+  display: none; /* Inicialmente oculto */
+  text-align: center;
+  color: green;
+  margin-top: 20px;
+}
+
+.contacto-header {
+  display: flex;
+  align-items: center; /* Alinea el contenido verticalmente en el centro */
+  justify-content: space-between; /* Espacio entre el logo y el nav */
+  padding: 20px;
+  background-color: black; /* Fondo del header */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra del header */
+}
+
+.logo {
+  margin-right: 20px; /* Espacio entre el logo y el nav */
+}
+
+.nav-container {
+  flex-grow: 1; /* Permite que el contenedor del nav ocupe el espacio disponible */
+  display: flex;
+  justify-content: center; /* Centra el nav en el contenedor */
+}
+
+.nav-list-contacto {
+  list-style: none; /* Quita los puntos de la lista */
+  display: flex; /* Usa flexbox para alinear los elementos en fila */
+  justify-content: center; /* Alinea los elementos en el centro */
+  padding: 0; /* Elimina el padding por defecto */ /* Añade margen inferior */
+}
+
+.nav-item-contacto {
+  margin-bottom: 80%; /* Añade margen inferior */
+  display: flex; /* Alinea los elementos en fila */
+  align-items: center; /* Centra los items verticalmente */
+  margin: 0 60px; /* Espaciado horizontal entre los items */
+}
+
+.nav-link-contacto {
+  color: #ffffff; /* Color del texto */
+  font-weight: bold; /* Negrita para los links */
+  text-decoration: none; /* Quita el subrayado de los links */
+  padding: 10px 15px; /* Añade padding a los links */
+  transition: background-color 0.3s, color 0.3s; /* Transición al pasar el mouse */
+  border-radius: 5px; /* Añade bordes redondeados */
+}
+
+.nav-link-contacto:hover {
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.2
+  ); /* Color de fondo al pasar el mouse */
+  color: #0a0a0a; /* Cambia el color del texto al pasar el mouse */
+}
+
+.course-topics {
+  list-style-type: none; /* Elimina los marcadores */
+  padding: 0; /* Elimina el padding por defecto */
+  margin: 0; /* Elimina el margin por defecto */
+}
+
+.topic-item {
+  margin-bottom: 10px; /* Espaciado entre elementos de la lista, opcional */
+}
+
+.site-footer ul {
+  list-style-type: none; /* Eliminar las marcas de la lista */
+  padding: 0; /* Eliminar el padding por defecto */
+}
+
+.site-footer li {
+  margin: 10px 0; /* Espaciado entre elementos de la lista */
+}
+
+.site-footer a {
+  text-decoration: none; /* Sin subrayado en los enlaces */
+  color: white; /* Color del texto del enlace */
+}
+
+.site-footer a i {
+  margin-right: 5px; /* Espacio entre el ícono y el texto */
+}
+.map-column {
+  flex: 1; /* Cada columna ocupa el mismo espacio */
+  margin: 10px; /* Espaciado entre columnas */
+  min-width: 300px; /* Ancho mínimo para columnas */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+  padding: 20px; /* Espaciado interno */
+  border-radius: 8px; /* Bordes redondeados */
+}

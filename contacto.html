@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Instituto de música con cursos de canto, guitarra, piano y más."
+    />
+    <title>Instituto de Música - Inicio</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+
+  </head>
+  <body class="body-contacto">
+    <header class="contacto-header">
+      <a href="index.html">
+        <img src="./imagenes/logo1.png" alt="Logo" class="logo" />
+      </a>
+      <div class="nav-container">
+        <nav>
+          <ul class="nav-list-contacto">
+            <li class="nav-item-contacto">
+              <a href="index.html" class="nav-link-contacto">Inicio</a>
+            </li>
+            <li class="nav-item-contacto">
+              <a href="cursoDeCanto.html" class="nav-link-contacto"
+                >Curso de Canto</a
+              >
+            </li>
+            <li class="nav-item-contacto">
+              <a href="contacto.html" class="nav-link-contacto">Contacto</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="contacto-main">
+      <form id="contactoForm" class="formulario-enviado">
+        <h2>Formulario de Contacto para Consultas sobre Cursos</h2>
+
+        <label class="label" for="nombre">Nombre:</label>
+        <input
+          class="input-text"
+          type="text"
+          id="nombre"
+          name="nombre"
+          required
+        />
+
+        <label class="label" for="email">Correo Electrónico:</label>
+        <input
+          class="input-email"
+          type="email"
+          id="email"
+          name="email"
+          required
+        />
+
+        <label class="label" for="telefono">Teléfono:</label>
+        <input
+          class="input-tel"
+          type="tel"
+          id="telefono"
+          name="telefono"
+          required
+        />
+
+        <label class="label" for="curso">Curso de Interés:</label>
+        <select class="input-select" id="curso" name="curso" required>
+          <option value="" disabled selected>Seleccione un curso</option>
+          <option value="Canto">Canto</option>
+          <option value="Guitarra">Guitarra</option>
+          <option value="Piano">Piano</option>
+          <option value="Batería">Batería</option>
+          <option value="Violín">Violín</option>
+          <option value="Producción Musical">Producción Musical</option>
+        </select>
+
+        <label class="label">¿Cómo te enteraste de nosotros?</label>
+        <input
+          class="input-radio"
+          type="radio"
+          id="internet"
+          name="fuente"
+          value="Internet"
+          required
+        />
+        <label class="label" for="internet">Internet</label>
+        <input
+          class="input-radio"
+          type="radio"
+          id="amigos"
+          name="fuente"
+          value="Amigos"
+        />
+        <label class="label" for="amigos">Amigos</label>
+        <input
+          class="input-radio"
+          type="radio"
+          id="redes"
+          name="fuente"
+          value="Redes Sociales"
+        />
+        <label class="label" for="redes">Redes Sociales</label>
+
+        <label class="label">Selecciona tus instrumentos de interés:</label>
+        <input
+          class="input-checkbox"
+          type="checkbox"
+          id="guitarra"
+          name="instrumentos"
+          value="Guitarra"
+        />
+        <label class="label" for="guitarra">Guitarra</label>
+        <input
+          class="input-checkbox"
+          type="checkbox"
+          id="piano"
+          name="instrumentos"
+          value="Piano"
+        />
+        <label class="label" for="piano">Piano</label>
+        <input
+          class="input-checkbox"
+          type="checkbox"
+          id="bateria"
+          name="instrumentos"
+          value="Batería"
+        />
+        <label class="label" for="bateria">Batería</label>
+
+        <label class="label" for="curso_adicional"
+          >¿Qué cursos adicionales te interesan?</label
+        >
+        <input
+          class="input-text"
+          type="text"
+          id="curso_adicional"
+          name="curso_adicional"
+          placeholder="Selecciona un curso adicional"
+        />
+        <label class="label" for="mensaje">Mensaje:</label>
+        <textarea
+          class="textarea"
+          id="mensaje"
+          name="mensaje"
+          rows="4"
+          required
+        ></textarea>
+        <button class="submit-button" type="submit">Enviar</button>
+      </form>
+      </div>
+      </main>
+<!-- Sección de mapa con Google Maps -->
+<section class="location-map-section">
+            <h2 class="section-title">Encuéntranos</h2>
+            <div class="map-columns">
+              <div class="map-column">
+                <h3>Ubicación</h3>
+                <p>Estamos ubicados en:</p>
+                <p>Av. del Libertador 1234, Buenos Aires, Argentina</p>
+                <h4>Escucha nuestro podcast</h4>
+                <audio controls>
+                  <source src="./audio/audio.mp4" type="audio/mpeg" />
+                </audio>
+              </div>
+              <div class="map-column">
+                <h3>Google Maps</h3>
+                <div class="map-container">
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.450519979558!2d-58.44965478530365!3d-34.5730810804687!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb5887b3d6a0f%3A0x755db4d6027d5d!2sAv.%20del%20Libertador%20%26%20Jer%C3%B3nimo%20Salgado%2C%20C1426ADA%20CABA%2C%20Argentina!5e0!3m2!1ses-419!2sve!4v1695904780870!5m2!1ses-419!2sve"
+                    width="100%"
+                    height="250"
+                    style="border: 0"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                  >
+                  </iframe>
+                </div>
+              </div>
+              <div class="map-column">
+                <h3>Contacto</h3>
+                <ul>
+                  <li><strong>Teléfono:</strong> +54 11 1234-5678</li>
+                  <li><strong>Email:</strong> contacto@institutodemusicaabc.com</li>
+                  <li><strong>Horario:</strong> Lunes a Viernes: 9:00 - 18:00</li>
+                  <li><strong>Sábados:</strong> 9:00 - 13:00</li>
+                </ul>
+              </div>
+            </div>
+          </section>
+          <!-- Sección del pie de página -->
+          <footer class="site-footer">
+            <div class="footer-container">
+              <div class="footer-column">
+                <h3>Redes Sociales</h3>
+                <ul>
+                  <li>
+                    <a
+                      href="https://www.facebook.com/ipemcr/?locale=es_LA"
+                      target="_blank"
+                    >
+                      <i class="fab fa-facebook-f"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.instagram.com/ipemcomodororivadavia/"
+                      target="_blank"
+                    >
+                      <i class="fab fa-instagram"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.youtube.com/@ipemcomodoro/videos"
+                      target="_blank"
+                    >
+                      <i class="fab fa-youtube"></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+                    <span>
+                      &copy; Maria de los Angeles Maldonado Dni: 38518654.
+                    </span>
+          </footer>
+      </body>
+    </html>
